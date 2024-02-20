@@ -28,9 +28,10 @@ export default function SignUp() {
         headers: { 'Content-Type' : 'application/json' },
         body: JSON.stringify(formData),
       })
-      
+
       const data = await res.json()
       if (data.success === false){
+        setLoading(false)
         return setErrorMessage(data.message)
       }
     
@@ -39,7 +40,8 @@ export default function SignUp() {
         navigate('/sign-in')
       }
     } catch (err) {
-      setErrorMessage(err.message)
+      setLoading(false)
+      return setErrorMessage(err.message)
     }
     
 

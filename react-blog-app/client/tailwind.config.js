@@ -6,4 +6,6 @@ export const content = [
 export const theme = {
   extend: {},
 };
+export const darkMode = ["class"]
 export const plugins = [];
+

@@ -28,7 +28,7 @@ export default function DashProfile() {
   }, [imageFile])
 
   const uploadImage = async () => {
-    setImageFileLoading(null)
+    //setImageFileLoading(null)
     setImageFileUploadError(null)
     const storage = getStorage(app)
     const fileName = new Date().getTime() + imageFile.name // Appending the current time to make it unique

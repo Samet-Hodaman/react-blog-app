@@ -10,7 +10,7 @@ import FooterCom from './components/Footer';
 import PrivateRoute from './components/PrivateRoute';
 
 export default function App() {
-  return ( // Important things
+  return (
     <BrowserRouter>
       <Header />
       <Routes>
